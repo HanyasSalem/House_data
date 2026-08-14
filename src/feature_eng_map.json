@@ -1,0 +1,100 @@
+{
+    "house_age": {
+        "cols": [
+            "year",
+            "yr_built"
+        ],
+        "math": "subt"
+    },
+    "yr_since_renovation": {
+        "cols": [
+            "year",
+            "yr_renovated"
+        ],
+        "math": "subt"
+    },
+    "basement_ratio": {
+        "cols": [
+            "sqft_basement",
+            "sqft_living"
+        ],
+        "math": "div"
+    },
+    "living_lot_ratio": {
+        "cols": [
+            "sqft_living",
+            "sqft_lot"
+        ],
+        "math": "div"
+    },
+    "price_per_sqft": {
+        "cols": [
+            "price",
+            "sqft_living"
+        ],
+        "math": "div"
+    },
+    "sqft_living_diff": {
+        "cols": [
+            "sqft_living",
+            "sqft_living15"
+        ],
+        "math": "subt"
+    },
+    "sqft_lot_diff": {
+        "cols": [
+            "sqft_lot",
+            "sqft_lot15"
+        ],
+        "math": "subt"
+    },
+    "above_ratio": {
+        "cols": [
+            "sqft_above",
+            "sqft_living"
+        ],
+        "math": "div"
+    },
+    "total_rooms": {
+        "cols": [
+            "bedrooms",
+            "bathrooms"
+        ],
+        "math": "adding"
+    },
+    "bath_bed_ratio": {
+        "cols": [
+            "bathrooms",
+            "bedrooms"
+        ],
+        "math": "div"
+    },
+    "overall_quality": {
+        "cols": [
+            "grade",
+            "condition"
+        ],
+        "math": "mult"
+    },
+    "luxury_score": {
+        "cols": [
+            "waterfront",
+            "grade"
+        ],
+        "math": "adding"
+    },
+    "grade_sqft_living": {
+        "cols": [
+            "grade",
+            "sqft_living"
+        ],
+        "math": "mult"
+    },
+    "waterfront_view_interaction": {
+        "cols": [
+            "waterfront",
+            "view"
+        ],
+        "math": "mult"
+    }
+}
