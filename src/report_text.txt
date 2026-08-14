@@ -1,0 +1,88 @@
+*** Price and location
+the most expensive house lies on 98039.0
+the price of this house is 2.2M usd;
+the most economic house lies on zipcode: 98002.0 and the price is 0.2M usd
+from the map houses of expensive prices are at the North and houses with low prices are at the South of the map
+
+
+*** Houses soled in 2014 and 2015
+Number of houses most recently sold are 20699
+because they are sold on
+    year  count
+0  2014  13966
+1  2015   6733
+The oldest renovated was sold on 1934
+
+
+ *** The median price by Quartile and Year 
+Median Price by Quartile and Year: house sales are highest in quartile 2 in both 2014 and 2015,
+ while quartile 1 has the lowest median price in both years.
+Year and Quartile of highest price:
+   year  quartile  median_price
+4  2015         2      470500.0
+0  2014         2      465000.0
+
+Year and Quartile of lowest price
+   year  quartile  median_price
+2  2014         4      438975.0
+3  2015         1      440000.0
+ 
+
+*** The average price by decade
+The highest price of houses was built in the decade of 1900 with an average price of 0.6M USD;
+The lowest price of houses was built in the decade of 1960 with an average price of 0.4M USD;
+The plot shows that the houses built in the 1940s and 1960s have the lowest average prices-a price dip,
+while those built in the 1900s and 2010s have the highest average prices.
+
+the oldest house had 100 years with the highest price: 0.6M USD,
+the newest house had 40 years with the lowest price: 0.4M USD.
+
+The topmost prices were for houses aged: 
+     house_age_decade  avg_price
+10               100   557755.0
+8                 80   540000.0
+11               110   525500.0
+The lower most prices were for newer houses age: 
+    house_age_decade  avg_price
+4                40   390000.0
+5                50   390000.0
+7                70   394410.0
+
+There is 13126 houses with no basement at all,
+There is 8487 houses with basement
+** houses with basment ratio <0.5
+Houses with low basement ratio: 0.02 has a max median price of 0.71 M USD
+houses with lower basement ratio: 0.01 has the loweset price of 0.22 M USD
+** houses with basement ratio >= 0.5
+Houses with high basement ratio: 0.59 has a max median price of 0.97 M USD
+houses with lower basement ratio: 0.67 has the loweset price of 0.20 M USD
+
+** living lot ratio
+Houses with  living lot ratio: 4.06 has a max median price of 1.23 M USD
+houses with  living lot ratio: 1.69 has the loweset price of 0.29 M USD
+
+** above ratio
+Houses with  above ratio: 0.41 has a max median price of 0.97 M USD
+houses with  above ratio: 0.33 has the loweset price of 0.20 M USD
+
+**total_rooms
+houses with total_rooms:1.5 has a low median price of 0.26 M USD
+houses with total_rooms:13.75 has a high median price of 3.84 M USD 
+**bath_bed_ratio
+houses with bath_bed_ratio:0.0 has a low median price of 0.28 M USD
+houses with bath_bed_ratio:1.29 has a high median price of 6.88 M USD 
+**rooms_per_floor
+houses with rooms_per_floor:4.0 has a low median price of 0.32 M USD
+houses with rooms_per_floor:5.6 has a high median price of 7.70 M USD 
+**overall_quality
+houses with overall_quality:9 has a low median price of 0.07 M USD
+houses with overall_quality:52 has a high median price of 5.75 M USD 
+**luxury_score
+houses with luxury_score:4 has a low median price of 0.20 M USD
+houses with luxury_score:13 has a high median price of 3.05 M USD 
+**grade_sqft_living
+houses with grade_sqft_living:2010 has a low median price of 0.07 M USD
+houses with grade_sqft_living:156650 has a high median price of 7.70 M USD 
+**waterfront_view_interaction
+houses with waterfront_view_interaction:0 has a low median price of 0.45 M USD
+houses with waterfront_view_interaction:4 has a high median price of 1.60 M USD 
