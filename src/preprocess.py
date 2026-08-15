@@ -149,31 +149,31 @@ if __name__ == "__main__":
     house_data = pd.read_csv(r'D:\House_data\raw_data\house_data.csv')
     print (f" original house data dim: {house_data.shape}\n")
     # import feature mapping
-    with open (r"D:\House_data\src\feature_eng_map.json","r") as f:
-        feature_mapping = json.load(f)
-    # preprocess data: date and feature engineering
+    # with open (r"D:\House_data\src\feature_eng_map.json","r") as f:
+    #     feature_mapping = json.load(f)
+    # # preprocess data: date and feature engineering
     house_eng_data = preprocess_dates(house_data, 'date')
-    house_eng_data = flag_zero_values(house_eng_data)
-    house_eng_data = feature_engineer(house_eng_data, **feature_mapping)
-    # cleaning yr_renovation and yr_since_renovation columns
+    # house_eng_data = flag_zero_values(house_eng_data)
+    # house_eng_data = feature_engineer(house_eng_data, **feature_mapping)
+    # # cleaning yr_renovation and yr_since_renovation columns
     # correcting the misscalulation on houses not renovated
-    house_eng_data['yr_since_renovation']= np.where(house_eng_data['yr_renovated_flag']==1,
-                                                    house_eng_data['year']-house_eng_data['yr_renovated'],
-                                                    np.nan)
+    # house_eng_data['yr_since_renovation']= np.where(house_eng_data['yr_renovated_flag']==1,
+    #                                                 house_eng_data['year']-house_eng_data['yr_renovated'],
+    #                                                 np.nan)
     
     # fixing the negative values in yr_since_renovation column
-    house_eng_data.loc[house_eng_data['yr_since_renovation'] < 0, 'yr_since_renovation'] = np.nan
+    # house_eng_data.loc[house_eng_data['yr_since_renovation'] < 0, 'yr_since_renovation'] = np.nan
     print (f"engineered house data dim: {house_eng_data.shape}\n")
     # Engineering bedrooms
     # Dropping houses with bedrooms 0 : 13 records
     # Calculating rooms_per_floor with no np.nan
     house_eng_data = house_eng_data[house_eng_data['bedrooms'] != 0].copy()
-    house_eng_data = feature_engineer(
-	    house_eng_data,\
-	    **{'rooms_per_floor': {'cols': ["total_rooms", "floors"], 'math': 'div'}})
-    print (f"engineered house data after dropping 13 records:\n")
+    # house_eng_data = feature_engineer(
+	#     house_eng_data,\
+	#     **{'rooms_per_floor': {'cols': ["total_rooms", "floors"], 'math': 'div'}})
+    # print (f"engineered house data after dropping 13 records:\n")
     print (f"{house_eng_data.shape}")
     print ("Data preprocessing completed successfully...")
-    house_eng_data.to_csv(r'D:\House_data\raw_data\house_eng_data.csv',index=False)
+    # house_eng_data.to_csv(r'D:\House_data\raw_data\house_eng_data.csv',index=False)
     print('mission done ...')
     
