@@ -1,0 +1,17 @@
+sqft_living
+sqft_basement
+sqft_lot
+sqft_living15
+sqft_lot15
+bedrooms
+bathrooms
+floors
+grade
+condition
+waterfront
+view
+house_age
+year
+yr_renovated_flag
+distance_to_downtown
+zip_price_means
