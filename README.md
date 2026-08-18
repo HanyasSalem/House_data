@@ -46,3 +46,7 @@ to explore the dataset and visualize the results.
 Make sure to have the dataset file `house_data.csv` in the same directory as the notebooks for proper execution.
 Make sure that plotly is installed in your environment to visualize the data interactively.
 '''
+# Warning⚠️
+Any one using this repo must run:
+git fetch origin
+git reset --hard origin/main
